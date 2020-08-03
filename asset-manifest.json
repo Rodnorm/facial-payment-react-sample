@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/facial-payment-react-sample/static/css/main.604c5d2f.chunk.css",
+    "main.js": "/facial-payment-react-sample/static/js/main.ee7992e4.chunk.js",
+    "main.js.map": "/facial-payment-react-sample/static/js/main.ee7992e4.chunk.js.map",
+    "runtime-main.js": "/facial-payment-react-sample/static/js/runtime-main.7f60805b.js",
+    "runtime-main.js.map": "/facial-payment-react-sample/static/js/runtime-main.7f60805b.js.map",
+    "static/js/2.32b53cd7.chunk.js": "/facial-payment-react-sample/static/js/2.32b53cd7.chunk.js",
+    "static/js/2.32b53cd7.chunk.js.map": "/facial-payment-react-sample/static/js/2.32b53cd7.chunk.js.map",
+    "index.html": "/facial-payment-react-sample/index.html",
+    "precache-manifest.f795d2756dcfbbf80acac7eccb3bca0a.js": "/facial-payment-react-sample/precache-manifest.f795d2756dcfbbf80acac7eccb3bca0a.js",
+    "service-worker.js": "/facial-payment-react-sample/service-worker.js",
+    "static/css/main.604c5d2f.chunk.css.map": "/facial-payment-react-sample/static/css/main.604c5d2f.chunk.css.map",
+    "static/js/2.32b53cd7.chunk.js.LICENSE.txt": "/facial-payment-react-sample/static/js/2.32b53cd7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f60805b.js",
+    "static/js/2.32b53cd7.chunk.js",
+    "static/css/main.604c5d2f.chunk.css",
+    "static/js/main.ee7992e4.chunk.js"
+  ]
+}
