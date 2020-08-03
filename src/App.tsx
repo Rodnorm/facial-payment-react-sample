@@ -1,25 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Camera from './Components/Camera/Camera.Component';
+import { Router, Route } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history={createHistory({ basename: process.env.PUBLIC_URL })}>
+      <Route exact path="/" component={Camera} />
+    {/* <div className="route">
+      <Route exact path="/photo" component={ImageInput} />
+      <Route exact path="/camera" component={VideoInput} />
+    </div> */}
+      {/* <Camera /> */}
+  </Router>
   );
 }
 
