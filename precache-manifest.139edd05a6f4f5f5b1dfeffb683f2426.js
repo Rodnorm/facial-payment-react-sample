@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "679200379c81976e2999bdc65ba49100",
+    "revision": "1f5cca303abe00b60de78080569b7537",
     "url": "/facial-payment-react-sample/index.html"
   },
   {
-    "revision": "0732ac47d6e7039ebda9",
+    "revision": "a08e8fcba489ba426bb3",
     "url": "/facial-payment-react-sample/static/css/main.604c5d2f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/facial-payment-react-sample/static/js/2.32b53cd7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0732ac47d6e7039ebda9",
-    "url": "/facial-payment-react-sample/static/js/main.ee7992e4.chunk.js"
+    "revision": "a08e8fcba489ba426bb3",
+    "url": "/facial-payment-react-sample/static/js/main.49c15682.chunk.js"
   },
   {
     "revision": "cef3e10583ed64868416",

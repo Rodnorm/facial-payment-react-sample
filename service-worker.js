@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/facial-payment-react-sample/precache-manifest.f795d2756dcfbbf80acac7eccb3bca0a.js"
+  "/facial-payment-react-sample/precache-manifest.139edd05a6f4f5f5b1dfeffb683f2426.js"
 );
 
 self.addEventListener('message', (event) => {
