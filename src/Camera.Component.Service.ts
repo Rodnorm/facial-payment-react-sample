@@ -1,14 +1,11 @@
 import * as faceApi from "face-api.js";
 
 export function loadModels() {
-  const MODEL_URL = "/models";
+  const MODEL_URL =
+    "https://cors-anywhere.herokuapp.com/raw.githack.com/justadudewhohacks/face-api.js/master/weights";
   return Promise.all([
-    faceApi.loadTinyFaceDetectorModel(MODEL_URL),
-    faceApi.loadFaceLandmarkTinyModel(MODEL_URL),
-    faceApi.loadFaceRecognitionModel(MODEL_URL),
     faceApi.nets.tinyFaceDetector.loadFromUri(MODEL_URL),
     faceApi.nets.faceLandmark68Net.loadFromUri(MODEL_URL),
-    faceApi.nets.faceRecognitionNet.loadFromUri(MODEL_URL),
     faceApi.nets.faceExpressionNet.loadFromUri(MODEL_URL),
   ]);
 }
@@ -17,8 +14,12 @@ export const createDetection = (video: any) => {
   const canvas = faceApi.createCanvasFromMedia(
     video.current.children[0] as HTMLVideoElement
   );
-  canvas.className = "canvas"
+  canvas.className = "canvas";
+  const context = canvas.getContext("2d");
+  context && context.translate(canvas.width / 2, canvas.height / 2);
+  context && context.scale(-1, 1);
   video.current.prepend(canvas);
+  
   const displaySize = {
     width: video.current.children[1].videoWidth,
     height: video.current.children[1].videoHeight,
@@ -33,7 +34,6 @@ export const createDetection = (video: any) => {
       .withFaceLandmarks()
       .withFaceExpressions();
     const resizedDetections = faceApi.resizeResults(detections, displaySize);
-    const context = canvas.getContext("2d");
     context && context.clearRect(0, 0, canvas.width, canvas.height);
     faceApi.draw.drawDetections(canvas, resizedDetections);
     faceApi.draw.drawFaceLandmarks(canvas, resizedDetections);
